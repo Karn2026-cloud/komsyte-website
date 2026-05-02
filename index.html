@@ -9,29 +9,36 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: #0f172a;
   color: white;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 15px 30px;
+  background: #020617;
 }
 
 nav h2 {
   color: #38bdf8;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 45px;
+  font-size: 40px;
   color: #38bdf8;
 }
 
@@ -43,129 +50,148 @@ nav h2 {
 .btn {
   background: #38bdf8;
   color: black;
-  padding: 12px 25px;
-  border-radius: 30px;
+  padding: 12px 20px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: white;
+/* SECTION */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* GLASS CARD */
 .card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  background: #1e293b;
   padding: 20px;
-  margin: 15px;
-  border-radius: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
 
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* SECTION */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
+  background: #020617;
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <h2>KOMSYTE</h2>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Turn Your Data Into Profit 📊</h1>
-  <p>I help retail businesses increase profit using smart dashboards & insights.</p>
+  <h1>Increase Your Shop Profit Using Data 📊</h1>
+  <p>I help retail businesses understand sales, profit & trends using simple dashboards.</p>
+  
   <a href="https://wa.me/917666369172" class="btn">Get Free Demo</a>
 </section>
 
+<!-- ABOUT -->
 <section class="section">
-  <h2>What I Do</h2>
-  <div class="grid">
-    <div class="card">📊 Sales & Profit Analysis</div>
-    <div class="card">📦 Inventory Insights</div>
-    <div class="card">🤖 AI Business Suggestions</div>
-  </div>
+  <h2>About Me</h2>
+  <p>
+    I am Karan, founder of KOMSYTE. I help small retail businesses grow using data analytics and dashboards.
+  </p>
 </section>
 
-<section class="section">
+<!-- PROJECTS -->
+<section class="section" id="projects">
   <h2>Projects</h2>
+
   <div class="grid">
+
     <div class="card">
       <h3>Amazon Sales Dashboard</h3>
-      <p>Found top products & revenue trends</p>
+      <p>Identified top-selling products and profit trends.</p>
     </div>
+
+    <div class="card">
+      <h3>Student Performance</h3>
+      <p>Analyzed factors affecting student results.</p>
+    </div>
+
     <div class="card">
       <h3>Retail Dashboard</h3>
-      <p>Identified dead stock & profit drivers</p>
+      <p>Found dead stock and best-performing items.</p>
     </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+
     <div class="card">
-      <h3>Student Analysis</h3>
-      <p>Analyzed performance patterns</p>
+      <h3>Starter - ₹1999</h3>
+      <p>Basic dashboard (Sales + Profit)</p>
     </div>
+
+    <div class="card">
+      <h3>Growth - ₹4999</h3>
+      <p>Advanced dashboard + insights</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium - ₹9999+</h3>
+      <p>AI insights + consulting</p>
+    </div>
+
   </div>
 </section>
 
+<!-- PROBLEM -->
 <section class="section">
-  <h2>Pricing</h2>
-  <div class="grid">
-    <div class="card">Starter ₹1999</div>
-    <div class="card">Growth ₹4999</div>
-    <div class="card">Premium ₹9999+</div>
+  <h2>Problems I Solve</h2>
+
+  <div class="card">
+    ❌ Don’t know which product gives profit<br>
+    ❌ Stock is wasted<br>
+    ❌ No clear sales data
+  </div>
+
+  <div class="card">
+    ✅ I provide dashboards that show exactly what to improve
   </div>
 </section>
 
-<section class="section">
-  <h2>Why Choose KOMSYTE?</h2>
-  <div class="grid">
-    <div class="card">✔ Simple dashboards</div>
-    <div class="card">✔ Clear business insights</div>
-    <div class="card">✔ Real profit improvement</div>
-  </div>
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>📞 WhatsApp: 7666369172</p>
+  <p>📧 komsyte2026@gmail.com</p>
 </section>
 
 <footer>
   <p>© 2026 KOMSYTE | Built by Karan</p>
 </footer>
-
-<a href="https://wa.me/917666369172" class="whatsapp">💬</a>
 
 </body>
 </html>
